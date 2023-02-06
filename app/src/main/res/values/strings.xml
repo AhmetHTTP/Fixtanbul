@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ComplaintManagement</string>
+    <string name="home">Home</string>
+    <string name="add_comp">Add</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="active_complaints">Active Complaints</string>
+    <string name="solved_complaints">Solved Complaints</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password_again">Password Again</string>
+    <string name="citizen_id">Citizen ID</string>
+    <string name="agree_terms_conditions">I\'ve read the terms and conditions, I\'m accepting them.</string>
+    <string name="already_have_an_account">I already have an account</string>
+    <string name="welcome">Welcome</string>
+    <string name="have_a_problem">Do You Have A Problem?</string>
+    <string name="report_a_problem">Report A Problem</string>
+    <string name="see_all">See All</string>
+    <string name="have_no_problems">You Have No Problems Yet.</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="an_error_occured">An Error Occured</string>
+    <string name="what_is_your_complaint">What is your complaint?</string>
+    <string name="enter_your_complaint_location">Enter Your Complaint Location</string>
+    <string name="make_complaint">MAKE COMPLAINT</string>
+    <string name="permission_needed_for_gallery">Permission Needed For Gallery</string>
+    <string name="give_permission">Give Permission</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="location_not_found">Location Couldn\'t found, please enter it manually</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLVE">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_user_pp_notifications_row"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/user_image_placeholder"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp">
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+                    <TextView
+                        android:id="@+id/tv_user_name_surname_notifications_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Name Surname"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textStyle="bold">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_address_notifications_row"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Kadıköy/Atatürk Mahallesi"
+                        android:textSize="14sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_notifications_complaint_image_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/ic_launcher_background">
+                </ImageView>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_description_notification_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="TEST TEST TEST description"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider_view_notifications_row"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:alpha="0.0">
+    </View>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logInFragment">
+
+    <fragment
+        android:id="@+id/addComplaintFragment"
+        android:name="com.acm431.complaintmanagement.view.complaintviews.AddComplaintFragment"
+        android:label="AddComplaintFragment" />
+    <fragment
+        android:id="@+id/adminActiveFragment"
+        android:name="com.acm431.complaintmanagement.view.complaintviews.tabfragments.AdminActiveFragment"
+        android:label="AdminActiveFragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.acm431.complaintmanagement.view.authviews.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.acm431.complaintmanagement.view.authviews.LogInFragment"
+        android:label="LogInFragment" >
+        <action
+            android:id="@+id/action_logInFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminSolvedFragment"
+        android:name="com.acm431.complaintmanagement.view.complaintviews.tabfragments.AdminSolvedFragment"
+        android:label="AdminSolvedFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.acm431.complaintmanagement.view.complaintviews.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_addComplaintFragment"
+            app:destination="@id/addComplaintFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+</navigation>

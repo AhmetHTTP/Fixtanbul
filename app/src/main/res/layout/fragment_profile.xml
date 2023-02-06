@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".view.complaintviews.ProfileFragment"
+    android:background="@drawable/splash_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_log_out"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:tint="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+        </ImageView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="60dp">
+
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/welcome"
+                            android:gravity="center"
+                            android:textSize="18sp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/tv_name_surname_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name Surname"
+                            tools:text="Name Surname"
+                            android:gravity="center"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textStyle="bold">
+                        </TextView>
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/have_a_problem"
+                            android:gravity="center"
+                            android:textSize="18sp">
+                        </TextView>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_image_placeholder"
+                    app:civ_border_color="@color/app_yellow"
+                    app:civ_border_width="2dp"
+                    app:layout_anchor="@+id/cardView2"
+                    app:layout_anchorGravity="top|center"
+                    android:elevation="2dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_report_problem"
+                    android:layout_marginTop="125dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/report_a_problem"
+                    android:textColor="@color/white"
+                    android:background="@drawable/app_button_background"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:elevation="2dp">
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_no_problems_msg_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="@string/have_no_problems"
+            android:textColor="@color/white"
+            android:textSize="18sp">
+        </TextView>
+
+
+        <FrameLayout
+            android:id="@+id/fl_rv_complaint_holder_profile"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_profile_complaints"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

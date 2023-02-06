@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fixist</string>
+    <string name="home">Ev</string>
+    <string name="add_comp">Sorun Bildirin</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="profile">Profil</string>
+    <string name="active_complaints">Aktif</string>
+    <string name="solved_complaints">Çözüldü</string>
+    <string name="email">E-Posta</string>
+    <string name="password">Şifre</string>
+    <string name="or">veya</string>
+    <string name="register">Hesap Oluştur</string>
+    <string name="forgot_password">Şifremi Unuttum</string>
+    <string name="login">Giriş Yap</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password_again">Tekrar Şifre</string>
+    <string name="citizen_id">TC Kimlik Numarası</string>
+    <string name="agree_terms_conditions">Şartları Okudum ve Kabul Ediyorum.</string>
+    <string name="already_have_an_account">Zaten hesabım var</string>
+    <string name="welcome">Merhaba</string>
+    <string name="have_a_problem">Bir sorunla mı karşılaştın?</string>
+    <string name="report_a_problem">Sorun Bildirin</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="have_no_problems">Henüz bir şikayetiniz yok.</string>
+    <string name="please_wait">Lütfen Bekleyin</string>
+    <string name="an_error_occured">Bir Hata Oluştu</string>
+    <string name="what_is_your_complaint">Şikayetiniz Nedir?</string>
+    <string name="enter_your_complaint_location">Şikayetin Konumunu Giriniz</string>
+    <string name="make_complaint">Şikayet Et</string>
+    <string name="permission_needed_for_gallery">Galeri İçin İzin Gerekli</string>
+    <string name="permission_denied">İzin Reddedildi</string>
+    <string name="give_permission">İzin Ver</string>
+    <string name="location_not_found">Konum Bulunamadı, Lütfen Manuel Olarak Giriniz.</string>
+</resources>

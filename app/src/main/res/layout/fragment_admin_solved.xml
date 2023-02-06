@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_solved_complaints_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_no_problems_msg_notifications_solved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_no_problems"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white">
+    </TextView>
+</FrameLayout>

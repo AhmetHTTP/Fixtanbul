@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_address_date_profile_complaint_row"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        tools:text="Halim Ağa Caddesi Kadıköy - 20.12.2022"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        >
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_complaint_image_small_profile_row"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_photo_camera_24"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp">
+                <TextView
+                    android:id="@+id/tv_complaint_name_profile_row"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Kırık Yol"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_urgency_profile_row"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Aciliyet: Orta">
+                </TextView>
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/tv_row_complaint_status"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Ekipler Yönlendirildi"
+                    tools:background="@color/purple_500"
+                    android:background="@color/colorOrderStatusDelivered"
+                    android:textColor="@color/white">
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_marginStart="-5dp"
+                    android:id="@+id/iv_image_button_see_details_profile_row"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider_view_profile_row"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:alpha="0.0">
+    </View>
+
+</LinearLayout>
